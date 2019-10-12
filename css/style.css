@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 @font-face{
-  font-family: AvenirNext;
-  src:url(‘../fonts/AvenirNextLTPro-Regular.ttf’) format(‘truetype’);
+  font-family: "AvenirNext";
+  src:url(‘../fonts/AvenirNext-Regular.ttf’) format(‘truetype’);
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
   font-style: normal;
 }
 body{
-  font-family: Georgia,AvenirNext,sans-serif;
+  font-family: Georgia,'AvenirNext',sans-serif;
   font-size: 16px;
   margin: 0;
 }
@@ -54,17 +54,21 @@ header{
   position: relative;
   height: 700px;
   width: 100%;
+  overflow: hidden;
+  background: url("../img/bg-photo@2x.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .banner{
   width: 100%;
+  max-width: 100%;
   position: initial;
   padding: 40px;
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/bg-photo.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 .cuba{
   position: absolute;
@@ -126,7 +130,7 @@ header{
 }
 .menu ul li a{
   display: block;
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -136,10 +140,10 @@ header{
   color: #909090;
   text-decoration: none;
   text-align: center;
-  padding: 16px;
+  padding: 16px 30px;
 }
 .menu ul li a:hover{
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -177,7 +181,7 @@ header{
   color: #4e5665;
 }
 .content{
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -189,7 +193,7 @@ header{
 }
 .read-more{
   text-decoration: none;
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -205,7 +209,7 @@ header{
   padding: 64px;
 }
 .container-icon li p:nth-child(2){
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
@@ -216,7 +220,7 @@ header{
   text-align: center;
 }
 .container-icon li p:nth-child(3){
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -261,7 +265,7 @@ header{
   margin: 40px 0px 16px 40px;
 }
 .para p{
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -320,9 +324,9 @@ header{
   justify-content: center;
   padding: 80px 0px;
 }
-.hover-for-more-infor{
+.hover-for-more-info{
   text-align: center;
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -332,7 +336,7 @@ header{
   color: #ecb84c;
 }
 .cadillacs h6{
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -349,7 +353,6 @@ header{
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 300px;
 }
 .car-shadow{
   width: 1170px;
@@ -375,7 +378,7 @@ header{
   width: 300px;
 }
 .slider{
-  padding-top: 300px;
+  height: 700px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -391,6 +394,7 @@ header{
 .temple{
   position: absolute;
   z-index: 2;
+  left: 30%;
   transform: translate(-50%,0);
 }
 .town{
@@ -400,6 +404,7 @@ header{
 .varadero-beach{
   position: absolute;
   z-index: 2;
+  right: 30%;
   transform: translate(50%,0);
 }
 .road{
@@ -412,14 +417,14 @@ footer{
   align-items: center;
   background-color: #f8f8f8;
 }
-.container-infor{
+.container-info{
   border-top :solid 1px #e7e9eb;
-  padding-top: 50px;
+  padding-top: 20px;
   width: 100%;
+  justify-content: space-around;
 }
-.container-infor .t-agency{
-  min-width: 350px;
-  font-family: AvenirNext;
+.container-info .t-agency{
+  font-family: "AvenirNext";
   font-size: 34px;
   font-weight: 500;
   font-style: normal;
@@ -429,9 +434,9 @@ footer{
   color: #37c491;
   text-align: center;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0px 0px 100px;
 }
-.container-infor h5{
+.container-info h5{
   margin-bottom: 30px;
 }
 .rectangle{
@@ -443,7 +448,7 @@ footer{
   border: solid 1px #d9dde1;
   background-color: #ffffff;
   padding: 7px;
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -460,13 +465,11 @@ footer{
   width: 20px;
   height: 12px;
 }
-.infor{
-  padding-top: 20px;
-  min-width: 250px;
-  min-height: 200px;
+.info{
+  padding: 20px 0px 0px 80px;
 }
-.infor h3{
-  font-family: AvenirNext;
+.info h3{
+  font-family: "AvenirNext";
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
@@ -476,10 +479,10 @@ footer{
   color: #4e5665;
   padding-bottom: 20px;
 }
-.infor ul li{
+.info ul li{
   display: block;
   float: none;
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -489,14 +492,11 @@ footer{
   color: #505050;
   margin-bottom: 10px;
 }
-.infor ul li img{
+.info ul li img{
   margin-right: 10px;
 }
-.blog{
-  width: 490px;
-}
 .all-rights-reserved{
-  font-family: AvenirNext;
+  font-family: "AvenirNext";
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
