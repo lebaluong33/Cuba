@@ -1,56 +1,52 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@font-face{
+@font-face {
   font-family: AvenirNext;
   src:url('../fonts/AvenirNext-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
-@font-face{
+@font-face {
   font-family: Georgia;
   src:url('../fonts/georgia.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
-body{
+body {
   font-family: AvenirNext,Georgia,sans-serif;
   font-size: 16px;
   margin: 0;
 }
 /* define class include the popular css atributes*/
-.path{
+.path {
   width: -webkit-fill-available;
   height: 100%;
   background-color: #ecb84c;
 }
-.display-inline-block{
+.display-inline-block {
   display: inline-block;
 }
-.limited-width{
+.limited-width {
   width: 300px;
 }
-.flex-center-x-y{
+.flex-center-x-y {
   justify-content: center;
   align-items: center;
 }
-.flex-direction-column{
+.flex-direction-column {
   display: flex;
   flex-direction: column;
 }
-.flex-direction-row{
+.flex-direction-row {
   display: flex;
   flex-direction: row;
 }
 /* classes */
-.container{
+.container {
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-header{
+header {
   position: relative;
   height: 700px;
   width: 100%;
@@ -61,7 +57,7 @@ header{
   -o-background-size: cover;
   background-size: cover;
 }
-.banner{
+.banner {
   width: 100%;
   max-width: 100%;
   position: initial;
@@ -70,34 +66,25 @@ header{
   align-items: center;
   justify-content: center;
 }
-.cuba{
+.cuba {
   position: absolute;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   font-family: Georgia;
   font-size: 200px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
 }
-.explore-the-world{
+.explore-the-world {
   transform: translate(0px,-13px);
   padding: 0px 10px;
   width: 100%;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
   font-family: Georgia;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #ffffff;
 }
-.banner-path{
+.banner-path {
   position: relative;
   width: 100%;
   height: 100%; 
@@ -105,35 +92,34 @@ header{
   border-bottom: none;
   align-items: center;
 }
-.bottom-banner-path{
+.bottom-banner-path {
   width: 100%;
   height: 2px;
   position: absolute;
   bottom: 0;
   justify-content: center;
 }
-.bottom-banner-path-left{
+.bottom-banner-path-left {
   left:0;
 }
-.bottom-banner-path-right{
+.bottom-banner-path-right {
   right:0;
 }
 .menu{
   width: 100%;
 }
-.menu ul{
+.menu ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
   overflow: hidden;
 }
-.menu ul li a{
+.menu ul li a {
   display: block;
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
   letter-spacing: normal;
@@ -142,107 +128,96 @@ header{
   text-align: center;
   padding: 16px 30px;
 }
-.menu ul li a:hover{
+.menu ul li a:hover {
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
   letter-spacing: normal;
   color: #4e5665;
   border-bottom: solid 4px #ecb84c;
 }
-.cross-line{
+.cross-line {
   background-color: rgb(235, 235, 235);
   display: block;
   height: 1px;
   width: 100%;
 }
-.main-content{
+.main-content {
   width: 100%;
   padding: 0px 200px;
 }
-.cuba-artical{
+.cuba-artical {
   position: relative;
   align-items: center;
   justify-content: center;
   padding-top: 80px;
 }
-.article-title{
+.article-title {
   font-family: Georgia;
   font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 3;
   letter-spacing: normal;
   text-align: center;
   color: #4e5665;
 }
-.content{
+.content {
   font-family: AvenirNext;
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: normal;
   color: rgb(80, 80, 80);
   padding: 40px 0px;
 }
-.read-more{
+.read-more {
   text-decoration: none;
   font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: normal;
   color: #ecb84c;
 }
-.container-icon{
+.container-icon {
   list-style-type: none;
   width: 100%;
   justify-content: space-around;
   padding: 64px;
 }
-.container-icon li p:nth-child(2){
+.container-icon li p:nth-child(2) {
   font-family: AvenirNext;
   font-size: 22px;
   font-weight: 500;
-  font-style: normal;
   font-stretch: normal;
   line-height: 2;
   letter-spacing: normal;
   color: #4e5665;
   text-align: center;
 }
-.container-icon li p:nth-child(3){
+.container-icon li p:nth-child(3) {
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #909090;
   text-align: center;
 }
-.container-img{
+.container-img {
   justify-content: center;
   align-items: center;
   height: 500px;
 }
-.cuba-street-img{
+.cuba-street-img {
   z-index: 1;
   transform: translate(40%, 0px);
   width: 500px;
   height: auto;
   object-fit: contain; 
 }
-.para{
+.para {
   position: absolute;
   z-index: 2;
   width: 470px;
@@ -256,26 +231,22 @@ header{
   text-align: start;
   font-family: Georgia;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.04;
   letter-spacing: normal;
   color: #4e5665;
   margin: 40px 0px 16px 40px;
 }
-.para p{
+.para p {
   font-family: AvenirNext;
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: normal;
   color: #505050;
   margin: 0px 40px 40px;
 }
-.path-top-left{
+.path-top-left {
   position: absolute;
   top: 19px;
   left: 19px;
@@ -284,7 +255,7 @@ header{
   border-top: solid 2px #ecb84c;
   border-left: solid 2px #ecb84c;
 }
-.path-bottom-right{
+.path-bottom-right {
   position: absolute;
   bottom: 19px;
   right: 19px;
@@ -293,24 +264,24 @@ header{
   border-bottom: solid 2px #ecb84c;
   border-right: solid 2px #ecb84c;
 }
-.cuba-beach{
+.cuba-beach {
   z-index: 1;
   transform: translate(-40%, 0px);
   width: 500px;
   height: auto;
   object-fit: contain; 
 }
-.v2{
+.v2 {
   transform: translate(50%, 0px);
 }
-.x{
+.x {
   right: 19px;
   left: auto;
   border-top: solid 2px #ecb84c;
   border-right: solid 2px #ecb84c;
   border-left: none;
 }
-.y{
+.y {
   left: 19px;
   right: auto;
   border-bottom: solid 2px #ecb84c;
@@ -318,43 +289,41 @@ header{
   border-top: none; 
   border-right: none;
 }
-.the-cadillacs{
+.the-cadillacs {
   position: relative;
   align-items: center;
   justify-content: center;
   padding: 80px 0px;
 }
-.hover-for-more-info{
+.hover-for-more-info {
   text-align: center;
   font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: normal;
   color: #ecb84c;
 }
-.cadillacs h6{
+.cadillacs h6 {
   font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: normal;
   color: #ecb84c;  
   margin-bottom: 80px;
 }
-.cadillacs h2{
+.cadillacs h2 {
   margin-bottom: 15px;
 }
-.cuba-in-photo{
+.cuba-in-photo {
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.car-shadow{
+.car-shadow {
   width: 1170px;
   height: 7px;
   opacity: 0.5;
@@ -364,20 +333,20 @@ header{
   margin-bottom: 50px;
   border-radius: 900px;
 }
-.icon{
+.icon {
   width: 12px;
   height: 12px;
   background-color: #f6cd35;
   border-radius: 6px;
   border: double 1px #f6cd35;
 }
-.cross-line-in-cuba-photo{
+.cross-line-in-cuba-photo {
   background-color: rgb(235, 235, 235);
   display: block;
   height: 1px;
   width: 300px;
 }
-.slider{
+.slider {
   height: 700px;
   display: flex;
   width: 100%;
@@ -385,61 +354,57 @@ header{
   justify-content: center;
   position: relative;
 }
-.buildings{
+.buildings {
   position: absolute;
   z-index: 1;
   left: 0;
   transform: translate(-25%,0);
 }
-.temple{
+.temple {
   position: absolute;
   z-index: 2;
   left: 30%;
   transform: translate(-50%,0);
 }
-.town{
+.town {
   position: absolute;
   z-index: 3;
 }
-.varadero-beach{
+.varadero-beach {
   position: absolute;
   z-index: 2;
   right: 30%;
   transform: translate(50%,0);
 }
-.road{
+.road {
   position: absolute;
   z-index: 1;
   right: 0;
   transform: translate(25%,0);
 }
-footer{
+footer {
   align-items: center;
   background-color: #f8f8f8;
 }
-.container-info{
+.container-info {
   border-top :solid 1px #e7e9eb;
   padding-top: 20px;
   width: 100%;
   justify-content: space-around;
 }
-.container-info .t-agency{
+.container-info .t-agency {
   font-family: AvenirNext;
   font-size: 34px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #37c491;
   text-align: center;
   align-items: center;
   padding: 20px 0px 0px 100px;
 }
-.container-info h5{
+.container-info h5 {
   margin-bottom: 30px;
 }
-.rectangle{
+.rectangle {
   text-align: center;
   width: 140px;
   height: 32px;
@@ -450,56 +415,49 @@ footer{
   padding: 7px;
   font-family: AvenirNext;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
   letter-spacing: normal;
   color: #505050;
 }
-.rectangle option{
+.rectangle option {
   text-align: center;
 }
-.united-states{
+.united-states {
   margin-right :5px;
   width: 20px;
   height: 12px;
 }
-.info{
+.info {
   padding: 20px 0px 0px 80px;
 }
-.info h3{
+.info h3 {
   font-family: AvenirNext;
   font-size: 15px;
   font-weight: 500;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
   color: #4e5665;
   padding-bottom: 20px;
 }
-.info ul li{
+.info ul li {
   display: block;
   float: none;
   font-family: AvenirNext;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
   letter-spacing: normal;
   color: #505050;
   margin-bottom: 10px;
 }
-.info ul li img{
+.info ul li img {
   margin-right: 10px;
 }
-.all-rights-reserved{
+.all-rights-reserved {
   font-family: AvenirNext;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
   letter-spacing: normal;
