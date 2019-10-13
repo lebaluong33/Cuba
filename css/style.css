@@ -4,19 +4,19 @@
   box-sizing: border-box;
 }
 @font-face{
-  font-family: "AvenirNext";
-  src:url(‘../fonts/AvenirNext-Regular.ttf’) format(‘truetype’);
+  font-family: AvenirNext;
+  src:url('../fonts/AvenirNext-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
   font-family: Georgia;
-  src:url(‘../fonts/georgia.ttf’) format(‘truetype’);
+  src:url('../fonts/georgia.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 body{
-  font-family: Georgia,'AvenirNext',sans-serif;
+  font-family: AvenirNext,Georgia,sans-serif;
   font-size: 16px;
   margin: 0;
 }
@@ -130,7 +130,7 @@ header{
 }
 .menu ul li a{
   display: block;
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -143,7 +143,7 @@ header{
   padding: 16px 30px;
 }
 .menu ul li a:hover{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -181,7 +181,7 @@ header{
   color: #4e5665;
 }
 .content{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -193,7 +193,7 @@ header{
 }
 .read-more{
   text-decoration: none;
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -209,7 +209,7 @@ header{
   padding: 64px;
 }
 .container-icon li p:nth-child(2){
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
@@ -220,7 +220,7 @@ header{
   text-align: center;
 }
 .container-icon li p:nth-child(3){
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -265,7 +265,7 @@ header{
   margin: 40px 0px 16px 40px;
 }
 .para p{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -326,7 +326,7 @@ header{
 }
 .hover-for-more-info{
   text-align: center;
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -336,7 +336,7 @@ header{
   color: #ecb84c;
 }
 .cadillacs h6{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
@@ -424,7 +424,7 @@ footer{
   justify-content: space-around;
 }
 .container-info .t-agency{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 34px;
   font-weight: 500;
   font-style: normal;
@@ -448,7 +448,7 @@ footer{
   border: solid 1px #d9dde1;
   background-color: #ffffff;
   padding: 7px;
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -469,7 +469,7 @@ footer{
   padding: 20px 0px 0px 80px;
 }
 .info h3{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
@@ -482,7 +482,7 @@ footer{
 .info ul li{
   display: block;
   float: none;
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -496,7 +496,7 @@ footer{
   margin-right: 10px;
 }
 .all-rights-reserved{
-  font-family: "AvenirNext";
+  font-family: AvenirNext;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
