@@ -12,11 +12,14 @@
   src:url('../fonts/georgia.ttf') format('truetype');
 }
 body {
-  font-family: AvenirNext,Georgia,sans-serif;
+  font-family: AvenirNext, Georgia, sans-serif, serif;
   font-size: 16px;
   margin: 0;
 }
 /* define class include the popular css atributes*/
+.full-width {
+  width: 100%;
+}
 .path {
   width: -webkit-fill-available;
   width: -moz-fill-available; 
@@ -25,6 +28,12 @@ body {
   width: fill-available;
   height: 100%;
   background-color: #ecb84c;
+}
+.close-to-left {
+  left:0;
+}
+.close-to-right {
+  right:0;
 }
 .display-inline-block {
   display: inline-block;
@@ -48,12 +57,10 @@ body {
 .container {
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
-header {
+.container-banner {
   position: relative;
   height: 700px;
-  width: 100%;
   overflow: hidden;
   background: url("../img/bg-photo@2x.png") no-repeat center center; 
   -webkit-background-size: cover;
@@ -62,7 +69,6 @@ header {
   background-size: cover;
 }
 .banner {
-  width: 100%;
   max-width: 100%;
   position: initial;
   padding: 40px;
@@ -81,7 +87,6 @@ header {
 .explore-the-world {
   transform: translate(0px,-13px);
   padding: 0px 10px;
-  width: 100%;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
   font-family: Georgia;
   font-size: 24px;
@@ -90,38 +95,24 @@ header {
 }
 .banner-path {
   position: relative;
-  width: 100%;
   height: 100%; 
   border: solid 2px #ecb84c;
   border-bottom: none;
   align-items: center;
 }
 .bottom-banner-path {
-  width: 100%;
   height: 2px;
   position: absolute;
   bottom: 0;
   justify-content: center;
 }
-.close-to-left {
-  left:0;
-}
-.close-to-right {
-  right:0;
-}
-.menu{
-  width: 100%;
-}
-.menu ul {
-  display: flex;
-  flex-direction: row;
+.menu {
   justify-content: center;
   list-style-type: none;
   overflow: hidden;
 }
-.menu ul li a {
-  display: block;
-  font-family: AvenirNext;
+.menu-item {
+  display: inline-block;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.36;
@@ -130,11 +121,11 @@ header {
   text-align: center;
   padding: 16px 30px;
 }
-.menu ul li a:hover {
-  font-family: AvenirNext;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.36;
+.menu-item::after {
+  height: 4px;
+  content: '';
+}
+.menu-item:hover {
   color: #4e5665;
   border-bottom: solid 4px #ecb84c;
 }
@@ -142,16 +133,12 @@ header {
   background-color: rgb(235, 235, 235);
   display: block;
   height: 1px;
-  width: 100%;
 }
 .main-content {
-  width: 100%;
   padding: 0px 200px;
 }
 .cuba-artical {
   position: relative;
-  align-items: center;
-  justify-content: center;
   padding-top: 80px;
 }
 .article-title {
@@ -162,7 +149,6 @@ header {
   color: #4e5665;
 }
 .content {
-  font-family: AvenirNext;
   font-size: 16px;
   line-height: 1.75;
   color: rgb(80, 80, 80);
@@ -170,7 +156,6 @@ header {
 }
 .read-more {
   text-decoration: none;
-  font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.75;
@@ -178,12 +163,10 @@ header {
 }
 .container-icon {
   list-style-type: none;
-  width: 100%;
   justify-content: space-around;
   padding: 64px;
 }
 .container-icon li p:nth-child(2) {
-  font-family: AvenirNext;
   font-size: 22px;
   font-weight: 500;
   line-height: 2;
@@ -191,15 +174,12 @@ header {
   text-align: center;
 }
 .container-icon li p:nth-child(3) {
-  font-family: AvenirNext;
   font-size: 14px;
   font-weight: 500;
   color: #909090;
   text-align: center;
 }
 .container-img {
-  justify-content: center;
-  align-items: center;
   height: 500px;
 }
 .cuba-street-img {
@@ -228,29 +208,28 @@ header {
   margin: 40px 0px 16px 40px;
 }
 .para p {
-  font-family: AvenirNext;
   font-size: 16px;
   line-height: 1.75;
   color: #505050;
   margin: 0px 40px 40px;
 }
-.path-top-left {
+.para-path {
   position: absolute;
-  top: 19px;
-  left: 19px;
-  width: 33px;
-  height: 33px;
-  border-top: solid 2px #ecb84c;
-  border-left: solid 2px #ecb84c;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #ecb84c;
 }
-.path-bottom-right {
-  position: absolute;
-  bottom: 19px;
-  right: 19px;
-  width: 33px;
-  height: 33px;
-  border-bottom: solid 2px #ecb84c;
-  border-right: solid 2px #ecb84c;
+.top-left {
+  top: 20px;
+  left: 20px;
+  border-bottom: 0;
+  border-right: 0;
+}
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+  border-top: 0;
+  border-left: 0;
 }
 .cuba-beach {
   z-index: 1;
@@ -267,15 +246,15 @@ header {
   left: auto;
   border-top: solid 2px #ecb84c;
   border-right: solid 2px #ecb84c;
-  border-left: none;
+  border-left: 0;
 }
 .y {
   left: 19px;
   right: auto;
   border-bottom: solid 2px #ecb84c;
   border-left: solid 2px #ecb84c;
-  border-top: none; 
-  border-right: none;
+  border-top: 0; 
+  border-right: 0;
 }
 .cadillacs {
   position: relative;
@@ -285,16 +264,10 @@ header {
 }
 .hover-for-more-info {
   text-align: center;
-  font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.75;
   color: #ecb84c;
-}
-.cuba-in-photo {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
 }
 .car-shadow {
   width: 1170px;
@@ -302,16 +275,11 @@ header {
   opacity: 0.5;
   filter: blur(4px);
   -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
   background-color: #212020;
   margin-bottom: 50px;
   border-radius: 900px;
-}
-.icon {
-  width: 12px;
-  height: 12px;
-  background-color: #f6cd35;
-  border-radius: 6px;
-  border: double 1px #f6cd35;
 }
 .cross-line-in-cuba-photo {
   background-color: rgb(235, 235, 235);
@@ -323,14 +291,11 @@ header {
   height: 700px;
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 .buildings {
   position: absolute;
   z-index: 1;
-  left: 0;
   transform: translate(-25%,0);
 }
 .temple {
@@ -352,7 +317,6 @@ header {
 .road {
   position: absolute;
   z-index: 1;
-  right: 0;
   transform: translate(25%,0);
 }
 footer {
@@ -365,8 +329,7 @@ footer {
   width: 100%;
   justify-content: space-around;
 }
-.container-info .t-agency {
-  font-family: AvenirNext;
+.container-info .container-t-agency {
   font-size: 34px;
   font-weight: 500;
   color: #37c491;
@@ -374,10 +337,10 @@ footer {
   align-items: center;
   padding: 20px 0px 0px 100px;
 }
-.container-info h5 {
-  margin-bottom: 30px;
+.t-agency-title {
+  padding-bottom: 30px;
 }
-.rectangle {
+.select-monetary-unit {
   text-align: center;
   width: 140px;
   height: 32px;
@@ -386,12 +349,11 @@ footer {
   border: solid 1px #d9dde1;
   background-color: #ffffff;
   padding: 7px;
-  font-family: AvenirNext;
   font-size: 14px;
   line-height: 1.36;
   color: #505050;
 }
-.rectangle option {
+.monetary-unit {
   text-align: center;
 }
 .united-states {
@@ -402,28 +364,25 @@ footer {
 .info {
   padding: 20px 0px 0px 80px;
 }
-.info h3 {
-  font-family: AvenirNext;
+.info .info-title{
   font-size: 15px;
   font-weight: 500;
   line-height: 1.33;
   color: #4e5665;
   padding-bottom: 20px;
 }
-.info ul li {
+.detail-info {
   display: block;
   float: none;
-  font-family: AvenirNext;
   font-size: 14px;
   line-height: 1.36;
   color: #505050;
   margin-bottom: 10px;
 }
-.info ul li img {
+.info-icon {
   margin-right: 10px;
 }
 .all-rights-reserved {
-  font-family: AvenirNext;
   font-size: 14px;
   line-height: 1.36;
   color: #505050;
