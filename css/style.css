@@ -19,6 +19,10 @@ body {
 /* define class include the popular css atributes*/
 .path {
   width: -webkit-fill-available;
+  width: -moz-fill-available; 
+  width: -ms-fill-available; 
+  width: -o-fill-available;
+  width: fill-available;
   height: 100%;
   background-color: #ecb84c;
 }
@@ -99,10 +103,10 @@ header {
   bottom: 0;
   justify-content: center;
 }
-.bottom-banner-path-left {
+.close-to-left {
   left:0;
 }
-.bottom-banner-path-right {
+.close-to-right {
   right:0;
 }
 .menu{
@@ -120,9 +124,7 @@ header {
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
-  font-stretch: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   color: #909090;
   text-decoration: none;
   text-align: center;
@@ -132,9 +134,7 @@ header {
   font-family: AvenirNext;
   font-size: 14px;
   font-weight: 600;
-  font-stretch: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   color: #4e5665;
   border-bottom: solid 4px #ecb84c;
 }
@@ -157,18 +157,14 @@ header {
 .article-title {
   font-family: Georgia;
   font-size: 32px;
-  font-stretch: normal;
   line-height: 3;
-  letter-spacing: normal;
   text-align: center;
   color: #4e5665;
 }
 .content {
   font-family: AvenirNext;
   font-size: 16px;
-  font-stretch: normal;
   line-height: 1.75;
-  letter-spacing: normal;
   color: rgb(80, 80, 80);
   padding: 40px 0px;
 }
@@ -177,9 +173,7 @@ header {
   font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
-  font-stretch: normal;
   line-height: 1.75;
-  letter-spacing: normal;
   color: #ecb84c;
 }
 .container-icon {
@@ -192,9 +186,7 @@ header {
   font-family: AvenirNext;
   font-size: 22px;
   font-weight: 500;
-  font-stretch: normal;
   line-height: 2;
-  letter-spacing: normal;
   color: #4e5665;
   text-align: center;
 }
@@ -231,18 +223,14 @@ header {
   text-align: start;
   font-family: Georgia;
   font-size: 24px;
-  font-stretch: normal;
   line-height: 1.04;
-  letter-spacing: normal;
   color: #4e5665;
   margin: 40px 0px 16px 40px;
 }
 .para p {
   font-family: AvenirNext;
   font-size: 16px;
-  font-stretch: normal;
   line-height: 1.75;
-  letter-spacing: normal;
   color: #505050;
   margin: 0px 40px 40px;
 }
@@ -289,7 +277,7 @@ header {
   border-top: none; 
   border-right: none;
 }
-.the-cadillacs {
+.cadillacs {
   position: relative;
   align-items: center;
   justify-content: center;
@@ -300,23 +288,8 @@ header {
   font-family: AvenirNext;
   font-size: 16px;
   font-weight: 600;
-  font-stretch: normal;
   line-height: 1.75;
-  letter-spacing: normal;
   color: #ecb84c;
-}
-.cadillacs h6 {
-  font-family: AvenirNext;
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  line-height: 1.75;
-  letter-spacing: normal;
-  color: #ecb84c;  
-  margin-bottom: 80px;
-}
-.cadillacs h2 {
-  margin-bottom: 15px;
 }
 .cuba-in-photo {
   align-items: center;
@@ -415,9 +388,7 @@ footer {
   padding: 7px;
   font-family: AvenirNext;
   font-size: 14px;
-  font-stretch: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   color: #505050;
 }
 .rectangle option {
@@ -435,9 +406,7 @@ footer {
   font-family: AvenirNext;
   font-size: 15px;
   font-weight: 500;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #4e5665;
   padding-bottom: 20px;
 }
@@ -446,9 +415,7 @@ footer {
   float: none;
   font-family: AvenirNext;
   font-size: 14px;
-  font-stretch: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   color: #505050;
   margin-bottom: 10px;
 }
@@ -458,9 +425,7 @@ footer {
 .all-rights-reserved {
   font-family: AvenirNext;
   font-size: 14px;
-  font-stretch: normal;
   line-height: 1.36;
-  letter-spacing: normal;
   color: #505050;
   padding: 20px 0px;
 }
